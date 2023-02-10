@@ -21,7 +21,7 @@ import { SidenavService } from './components/services/sidenav.service';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [SidenavService],
-  bootstrap: [AppComponent]
+  providers: [ SidenavService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

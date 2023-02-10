@@ -3,7 +3,7 @@
   <button mat-icon-button (click)="sidenav.toggle()" aria-label="Example icon-button with menu icon">
     <mat-icon class="my-2">menu</mat-icon>
   </button>
-  <span class="mx-2">MasTi</span>
+  <span class="mx-2" routerLink="/">MasTi</span>
   <span class="spacer"></span>
   <button mat-icon-button class="mx-2" aria-label="Example icon-button with heart icon">
     <mat-icon class="my-2">question_answer</mat-icon>
@@ -20,7 +20,7 @@
   </mat-drawer>
 
   <div class="sidenav-content">
-    content here
+    <router-outlet></router-outlet>
   </div>
 
 </mat-drawer-container>

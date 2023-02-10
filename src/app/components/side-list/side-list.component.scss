@@ -22,3 +22,17 @@
     transition: opacity 400ms;
     z-index: 0;
 }
+
+.is-active {
+    background: linear-gradient(45deg,
+            transparent 5%,
+            rgb(78, 240, 66) 50%,
+            transparent 99%);
+    border-radius: inherit;
+    content: "";
+    inset: 0px;
+    opacity: 0.5;
+    position: relative;
+    transition: opacity 400ms;
+    z-index: 0;
+}
