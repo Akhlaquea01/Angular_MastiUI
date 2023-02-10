@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './app.material.module';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { SideListComponent } from './components/side-list/side-list.component';
+import { SidenavService } from './components/services/sidenav.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    SideListComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
     MaterialModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
