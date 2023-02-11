@@ -12,6 +12,7 @@ import { AnimatedProfileComponent } from './animated-profile.component';
   imports: [
     CommonModule,
     AnimatedProfileRoutingModule
-  ]
+  ],
+  exports:[AnimatedProfileComponent]
 })
 export class AnimatedProfileModule { }
