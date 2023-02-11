@@ -21,6 +21,11 @@ export class SideListComponent {
       name: 'Glassmorphism Calendar',
       created: new Date('02/11/2023'),
       route: '/glassmorphism/calendar'
+    },
+    {
+      name: 'Glassmorphism Button',
+      created: new Date('02/11/2023'),
+      route: '/glassmorphism/button'
     }
   ];
 }
