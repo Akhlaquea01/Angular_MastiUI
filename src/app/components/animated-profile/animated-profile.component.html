@@ -1,1 +1,36 @@
-<p>animated-profile works!</p>
+<div class="main">
+    <div class="profile-card">
+        <div class="profile-card-header">
+            <div class="profile-image" [style.background-image]="'url(/assets/' + profileData.imageUrl + ')'"></div>
+
+            <div class="profile-info">
+                <h3 class="profile-name">{{profileData.name}}</h3>
+                <p class="profile-desc">{{profileData.desc}}</p>
+            </div>
+        </div>
+
+        <div class="profile-card-body">
+            <ul class="status">
+                <li>
+                    <span class="status-value">{{profileData.valueOne}}</span><br>
+                    <span class="status-text">{{profileData.keyOne}}</span>
+                </li>
+
+                <li>
+                    <span class="status-value">{{profileData.valueTwo}}</span><br>
+                    <span class="status-text">{{profileData.keyTwo}}</span>
+                </li>
+
+                <li *ngIf="!profileData?.isTwoStatuses">
+                    <span class="status-value">{{profileData.valueThree}}</span><br>
+                    <span class="status-text">{{profileData.keyThree}}</span>
+                </li>
+            </ul>
+
+            <div class="action">
+                <button class="btn btn-pink">{{profileData.primaryAction}}</button>
+                <button class="btn btn-gray-outline">{{profileData.secondaryAction}}</button>
+            </div>
+        </div>
+    </div>
+</div>
