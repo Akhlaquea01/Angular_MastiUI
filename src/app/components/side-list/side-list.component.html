@@ -3,7 +3,7 @@
     <mat-divider></mat-divider>
     <mat-list-item class="item-card" *ngFor="let item of items" [routerLink]="item.route" routerLinkActive="is-active">
         <mat-icon class="my-4" [ngStyle]="{'color':'#F8D775'}" matListItemIcon>folder</mat-icon>
-        <div matListItemTitle>{{item.name}}</div>
+        <div matListItemTitle [title]="item.name">{{item.name}}</div>
         <div matListItemLine>{{item.created | date}}</div>
     </mat-list-item>
 </mat-list>

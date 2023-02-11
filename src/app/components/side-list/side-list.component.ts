@@ -18,9 +18,9 @@ export class SideListComponent {
       route: '/animated-profile'
     },
     {
-      name: 'Animated Profile',
-      created: new Date('02/10/2023'),
-      route: '/animated-profile2'
+      name: 'Glassmorphism Calendar',
+      created: new Date('02/11/2023'),
+      route: '/glassmorphism/calendar'
     }
   ];
 }

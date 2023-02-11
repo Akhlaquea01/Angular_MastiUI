@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'animated-profile',
         loadChildren: () => import('./components/animated-profile/animated-profile.module').then(m => m.AnimatedProfileModule),
+      },
+      {
+        path: 'glassmorphism',
+        loadChildren: () => import('./components/glassmorphism/glassmorphism.module').then(m => m.GlassmorphismModule),
       }
     ]
   }
