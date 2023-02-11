@@ -6,14 +6,17 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 
 
+const componentArray = [ CalendarComponent,
+  ButtonsComponent ]
 @NgModule({
   declarations: [
-    CalendarComponent,
-    ButtonsComponent
+    ...componentArray
   ],
   imports: [
     CommonModule,
     GlassmorphismRoutingModule
+  ],
+  exports: [ ...componentArray
   ]
 })
 export class GlassmorphismModule { }
