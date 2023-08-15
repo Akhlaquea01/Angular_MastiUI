@@ -3,17 +3,10 @@ import { NgModule } from '@angular/core';
 import { MastiButtonComponent } from './masti-button/masti-button.component';
 import { MastiChipsComponent } from './masti-chips/masti-chips.component';
 
-
-const compon = [ MastiButtonComponent,
-  MastiChipsComponent ]
+const componponents = [MastiButtonComponent, MastiChipsComponent];
 @NgModule({
-
-  declarations: [
-    ...compon
-  ],
-  imports: [
-    CommonModule
-  ],
-  exports: [ ...compon ]
+  declarations: [...componponents],
+  imports: [CommonModule],
+  exports: [...componponents],
 })
-export class ComponentsModule { }
+export class ComponentsModule {}
