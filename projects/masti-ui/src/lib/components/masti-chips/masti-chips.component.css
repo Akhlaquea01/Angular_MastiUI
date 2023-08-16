@@ -1,0 +1,47 @@
+.neomorphism-chip {
+  display: inline-flex;
+  align-items: center;
+  /* Center contents vertically */
+  padding: 8px 16px;
+  border-radius: 16px;
+  background: #f0f0f0;
+  box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff;
+
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    box-shadow: 10px 10px 20px #d1d9e6, -10px -10px 20px #ffffff;
+    background-color: #f5f5f5;
+    color: var(--custom-color, rgb(9 8 9 / 98%));
+  }
+
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.selected {
+    background: #34db60;
+    box-shadow: 8px 8px 16px #a9c8e3, -8px -8px 16px #ffffff;
+  }
+}
+
+.neomorphism-chip:hover .chip-text {
+  color: var(--custom-color, rgb(9 8 9 / 98%));
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+}
+
+.chip-icon {
+  font-size: 20px;
+  margin: 0px 8px;
+  transition: color 0.3s ease;
+}
+
+.neomorphism-chip:hover .chip-icon {
+  color: var(--custom-color, rgb(9 8 9 / 98%));
+}
+
+.chip-text {
+  font-size: 14px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
