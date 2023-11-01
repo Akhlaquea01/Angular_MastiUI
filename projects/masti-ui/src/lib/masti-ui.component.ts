@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lib-masti-ui',
   template: `
     <p>
-      masti-ui works!
+      masti-ui works rafe test!
     </p>
   `,
   styles: [
