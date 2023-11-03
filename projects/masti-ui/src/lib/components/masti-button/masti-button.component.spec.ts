@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MastiButtonComponent } from './masti-button.component';
-import { colorType } from '../enums';
 
 describe('MastiButtonComponent', () => {
   let component: MastiButtonComponent;
@@ -28,7 +27,7 @@ describe('MastiButtonComponent', () => {
   });
 
   it('should apply custom color to button', () => {
-    component.btnType = colorType.Primary;
+    component.btnColor = "#202f3f";
     fixture.detectChanges();
     const buttonElement: HTMLElement =
       fixture.nativeElement.querySelector('.masti-button');
@@ -36,7 +35,7 @@ describe('MastiButtonComponent', () => {
     const customColor = computedStyles
       .getPropertyValue('--custom-color')
       .trim();
-    expect(customColor).toBe(colorType.Primary);
+    expect(customColor).toBe("#202f3f");
   });
 
   it('should disable the button', () => {

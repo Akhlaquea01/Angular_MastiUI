@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { colorType } from '../enums';
 
 @Component({
   selector: 'masti-button',
   template: `<button
     type="button"
     class="masti-button"
-    style="--custom-color: {{ btnType }};"
+    style="--custom-color: {{ btnColor }};"
     [disabled]="isDisabled"
   >
     {{ displayText }}
@@ -15,6 +14,6 @@ import { colorType } from '../enums';
 })
 export class MastiButtonComponent {
   @Input({ required: true }) displayText = 'Button';
-  @Input() btnType: colorType = colorType.Default;
+  @Input() btnColor = "#202f3f";
   @Input() isDisabled: boolean = false;
 }

@@ -1,7 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MastiChipsComponent } from './masti-chips.component';
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 describe('MastiChipsComponent', () => {
   let fixture: ComponentFixture<MastiChipsComponent>;
@@ -9,8 +7,7 @@ describe('MastiChipsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MastiChipsComponent],
-      imports: [FontAwesomeModule], // Add this line to import the FontAwesomeModule
+      declarations: [MastiChipsComponent]
     });
 
     fixture = TestBed.createComponent(MastiChipsComponent);
@@ -25,7 +22,7 @@ describe('MastiChipsComponent', () => {
     it('should create a chip component with default values', () => {
       // Act & Assert
       expect(component).toBeTruthy();
-      expect(component.iconClass).toEqual(faCheck);
+      expect(component.showIcon).toEqual(true);
       expect(component.disabled).toBeFalse();
       expect(component.selected).toBeFalse();
       expect(component.textColor).toEqual('#db34c8');

@@ -21,7 +21,7 @@
   }
 
   &.selected {
-    background: #34db60;
+    background: #34db607e;
     box-shadow: 8px 8px 16px #a9c8e3, -8px -8px 16px #ffffff;
   }
 }
@@ -44,4 +44,13 @@
 .chip-text {
   font-size: 14px;
   transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.icon-right {
+  margin-left: 2px;
+}
+
+.icon-left {
+  margin-right: 2px;
+
 }
