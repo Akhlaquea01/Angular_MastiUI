@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "masti-ui": {
+    "button": {
       "projectType": "library",
-      "root": "projects/masti-ui",
-      "sourceRoot": "projects/masti-ui/src",
+      "root": "projects/button",
+      "sourceRoot": "projects/button/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/masti-ui/ng-package.json"
+            "project": "projects/button/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/masti-ui/tsconfig.lib.prod.json"
+              "tsConfig": "projects/button/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/masti-ui/tsconfig.lib.json"
+              "tsConfig": "projects/button/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,40 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/masti-ui/tsconfig.spec.json",
+            "tsConfig": "projects/button/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "chip": {
+      "projectType": "library",
+      "root": "projects/chip",
+      "sourceRoot": "projects/chip/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/chip/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/chip/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/chip/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/chip/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

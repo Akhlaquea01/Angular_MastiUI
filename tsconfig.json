@@ -3,17 +3,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "button": [
+        "dist/button"
+      ],
+      "chip": [
+        "dist/chip"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "paths": {
-      "masti-ui": [
-        "dist/masti-ui"
-      ]
-    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
