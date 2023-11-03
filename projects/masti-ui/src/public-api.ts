@@ -4,9 +4,9 @@
 
 // export * from './lib/masti-button/masti-button.component'; //for componets
 
-export * from './lib/masti-ui.component';
-export * from './lib/masti-ui.module';
-export * from './lib/masti-ui.service';
+// export * from './lib/masti-ui.component';
+// export * from './lib/masti-ui.module';
+// export * from './lib/masti-ui.service';
 
 /*
 export * from './lib/components/components.module';
